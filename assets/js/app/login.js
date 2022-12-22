@@ -47,3 +47,25 @@ $("#btnGoogle").click(function (e) {
       alert(errorMessage);
     });
 });
+
+$("#btnFacebook").click(function (e) {
+  const provider = new firebase.auth.FacebookAuthProvider();
+
+  firebase
+    .auth()
+    .signInWithPopup(provider)
+    .then(function (result) {
+      // code which runs on success
+      console.log("result =>", result);
+    })
+    .catch(function (error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      console.log(errorCode);
+      alert(errorCode);
+
+      var errorMessage = error.message;
+      console.log(errorMessage);
+      alert(errorMessage);
+    });
+});

@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>kablosuzkedi | Firebase ile TODO List</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="container">
-    <h3 class="text-center">Giriş Yapın</h3>
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3 well">
+    <div class="container">
+        <h3 class="text-center">Giriş Yapın</h3>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 well">
 
                 <div class="form-group">
                     <label>E-posta</label>
@@ -27,19 +49,24 @@
                     Eğer üye değilseniz hemen <a href="register.html">üye olun</a>
                 </p>
 
+            </div>
         </div>
     </div>
-</div>
 
 
-<button class="btn btn-success" id="btnGoogle">Google ile gir</button>
+    <button class="btn btn-success" id="btnGoogle">Google ile gir</button>
+    
 
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
-<script src="assets/js/app/login.js"></script>
+    <a href="#" class="fa fa-facebook" id="btnFacebook"></a>
+
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+    <script src="assets/js/app/login.js"></script>
 
 
 </body>
+
 </html>
