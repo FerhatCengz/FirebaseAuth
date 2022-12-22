@@ -1,7 +1,7 @@
 # firebase-todo-list
-# Author : gokhan-kandemir
-# email : gokhan@gkandemir.com
-# 01.01.2018
+# Author : Ferhat Cengiz
+# email : ferhat.cengiz13@outlook.com
+# 22.12.2022
 # Application : Firebase Kullanarak JQuery ile TODO List Yapımı
 
 Firebase TODO List
